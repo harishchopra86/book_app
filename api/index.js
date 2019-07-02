@@ -13,7 +13,7 @@ app.use('/books', bookRoutes);
 const port = process.env.PORT || 80;
 
 app.get("*", (req, res) => res.status(200).send({
-    message: 'Welcome to API.'
+    message: 'Welcome to Book App API.'
 }));
 
 app.listen(port, () => {
