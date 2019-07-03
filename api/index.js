@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/books', bookRoutes);
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 
 app.get("*", (req, res) => res.status(200).send({
     message: 'Welcome to Book App API.'
